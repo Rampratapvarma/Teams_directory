@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00aeff;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.search-container {
+    position: relative;
+}
+
+input[type="text"] {
+    padding: 8px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.fasfa-search {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif; 
+}
+
+  
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); 
+    gap: 20px; 
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.3s ease;
+    align-items: center; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+  }
+
+.user-profile {
+    width: 40%; 
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+}
+
+.user-name {
+    padding: 10px;
+    /* background-color: #f0f0f0; */
+    text-align: center;
+    width: 60%; 
+    height: fit-content;
+}
+  
+  .card:hover .user-name {
+    background-color: #ddd; 
+  }
+
+  .add-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00aeff;
+    /* color: #fff; */
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .add-icon i {
+    font-size: 24px;
+  }
+  
+  
